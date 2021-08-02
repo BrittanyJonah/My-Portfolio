@@ -858,10 +858,6 @@ hr {
   overflow: hidden;
 }
 
-.home-area:before {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .home-area .fixed-wrapper {
   margin: 0 50px;
   position: relative;

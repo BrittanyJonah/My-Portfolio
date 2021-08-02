@@ -43,8 +43,7 @@ h6{
 
 /* Layout */
 .navy-background {
-  background-color: var(--lightest-navy);
-  color: var(--slate);
+  background-color: var(--dark-navy);
 }
 
 .green-text {
@@ -57,7 +56,7 @@ h6{
 }
 
 .lightbox-wrapper {
-  background-color: var(--navy);
+  background-color: var(--dark-navy);
   color: var(--light-slate);
 }
 
@@ -81,22 +80,51 @@ h6{
 }
 
 .single-service {
-  background-color: var(--dark-navy) !important;
-}
+background: var(--dark-navy);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, var(--navy), var(--dark-navy));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, var(--navy), var(--dark-navy)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
 
 .service-title {
   color: var(--green) !important;
 }
 
+.single-review {
+  background-color: var(--navy) !important;
+}
+
+.client-name {
+  color: var(--green) !important;
+}
+
+.client-role {
+  color: var(--white) !important;
+}
+
+.single-plan {
+  background: var(--dark-navy);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, var(--navy), var(--dark-navy));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, var(--navy), var(--dark-navy)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+.plan-price {
+  color: var(--green) !important;
+}
+
+.resume-item {
+  background-color: var(--dark-navy) !important;
+ }
+
 /* Preloader */
 .preloader {
   background-color: var(--dark-navy);
-
+  font-family: var(--font-mono) !important;
 }
 
 /* Overylay Effect */
 #overlay-effect {
-  background-color: var(--light-navy);
+  background-color: var(--navy);
 }
 
 /* Logo */
