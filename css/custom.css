@@ -8,3 +8,70 @@
   */
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+:root{
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2,12,27,0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+}
+
+.navy-theme {
+  background-color: var(--light-navy);
+  color: var(--slate);
+}
+
+h1{
+  color: var(--white) !important;
+}
+
+a:hover {
+  color: var(--green) !important;
+}
+
+.nav-link {
+  color: var(--lightest-slate) !important;
+}
+
+.btn {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.btn:hover {
+  color: var(--green);
+  background-color:rgba(39.2,100,85.5,0.3);
+  border-color: var(--green);
+}
+
+.nav-link{
+  padding-top: 10px !important;
+}
+
+.btn-resume{
+  color: var(--green) !important;
+  padding: 10px 18px !important;
+}
+
+.fab {
+  transition: 0.4s;
+}
+
+.fab:hover {
+  color: var(--green);
+  -moz-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
+  transform: translate(0px, -5px)
+}
+
+.green-hover:hover {
+  color: var(--green) !important; 
+}
