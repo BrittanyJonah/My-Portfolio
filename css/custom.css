@@ -31,12 +31,30 @@ h1{
   color: var(--white) !important;
 }
 
+h6{
+  color: var(--green) !important;
+}
+
 a:hover {
   color: var(--green) !important;
 }
 
+.b-circle {
+  border: solid;
+  border-color: var(--green);
+  color: var(--green) !important;
+  padding: 2px 15px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.b-circle:hover {
+  background-color:rgba(39.2,100,85.5,0.3);
+}
+
 .nav-link {
   color: var(--lightest-slate) !important;
+  font-size: 0.9em !important;
 }
 
 .btn {
@@ -57,6 +75,7 @@ a:hover {
 .btn-resume{
   color: var(--green) !important;
   padding: 10px 18px !important;
+  font-size: 0.9em !important;
 }
 
 .fab {
@@ -70,6 +89,10 @@ a:hover {
   -o-transform: translate(0px, -5px);
   -webkit-transform: translate(0px, -5px);
   transform: translate(0px, -5px)
+}
+
+.green-text {
+  color: var(--green) !important; 
 }
 
 .green-hover:hover {
