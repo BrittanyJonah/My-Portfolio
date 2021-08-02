@@ -8,11 +8,13 @@
   */
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
 :root{
   --dark-navy: #020c1b;
   --navy: #0a192f;
   --light-navy: #112240;
-  --lightest-navy: #233554;
+  --lightest-navy: #11284b;
   --navy-shadow: rgba(2,12,27,0.7);
   --dark-slate: #495670;
   --slate: #8892b0;
@@ -20,43 +22,108 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+
+  --font-mono: 'PT Mono';
+  --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }
 
-.navy-theme {
-  background-color: var(--light-navy);
-  color: var(--slate);
+body{
+  font-family: var(--font-sans);
 }
 
+/* Typography */
 h1{
   color: var(--white) !important;
 }
 
 h6{
+  color: var(--green);
+  font-family: var(--font-mono);
+}
+
+/* Layout */
+.navy-background {
+  background-color: var(--lightest-navy);
+  color: var(--slate);
+}
+
+.green-text {
+  color: var(--green) !important; 
+  font-family: var(--font-mono);
+}
+
+.green-hover:hover {
+  color: var(--green) !important; 
+}
+
+.lightbox-wrapper {
+  background-color: var(--navy);
+  color: var(--light-slate);
+}
+
+.section-description {
+  color: var(--green) !important; 
+  font-family: var(--font-mono);
+}
+
+.section-title {
+  color: var(--white);
+}
+
+.content-subtitle {
+  color: var(--green) !important; 
+  font-family: var(--font-mono);
+}
+
+.content-title {
+  color: var(--light-slate);
+  font-family: var(--font-sans);
+}
+
+.single-service {
+  background-color: var(--dark-navy) !important;
+}
+
+.service-title {
   color: var(--green) !important;
 }
 
-a:hover {
-  color: var(--green) !important;
+/* Preloader */
+.preloader {
+  background-color: var(--dark-navy);
+
 }
 
+/* Overylay Effect */
+#overlay-effect {
+  background-color: var(--light-navy);
+}
+
+/* Logo */
 .b-circle {
   border: solid;
   border-color: var(--green);
   color: var(--green) !important;
-  padding: 2px 15px;
+  padding: 5px 13px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .b-circle:hover {
   background-color:rgba(39.2,100,85.5,0.3);
 }
 
+/* Nav */
 .nav-link {
   color: var(--lightest-slate) !important;
   font-size: 0.9em !important;
 }
 
+.nav-link{
+  padding-top: 10px !important;
+}
+
+/* Button */
 .btn {
   color: var(--green);
   border-color: var(--green);
@@ -68,8 +135,12 @@ a:hover {
   border-color: var(--green);
 }
 
-.nav-link{
-  padding-top: 10px !important;
+a:hover {
+  color: var(--green) !important;
+}
+
+.btn-outline {
+  font-family: var(--font-mono);
 }
 
 .btn-resume{
@@ -78,6 +149,7 @@ a:hover {
   font-size: 0.9em !important;
 }
 
+/* Icons */
 .fab {
   transition: 0.4s;
 }
@@ -91,10 +163,3 @@ a:hover {
   transform: translate(0px, -5px)
 }
 
-.green-text {
-  color: var(--green) !important; 
-}
-
-.green-hover:hover {
-  color: var(--green) !important; 
-}
