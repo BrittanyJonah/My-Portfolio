@@ -153,8 +153,8 @@ background: linear-gradient(to bottom, var(--navy), var(--dark-navy)); /* W3C, I
 
 /* Button */
 .btn {
-  color: var(--green);
-  border-color: var(--green);
+  color: var(--green) !important;
+  border-color: var(--green) !important;
 }
 
 .btn:hover {
@@ -216,4 +216,17 @@ a:hover {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: var(--white);
+}
+
+.success {
+  background-color: #020c1b;
+}
+
+.success-page {
+  margin: auto;
+  margin-top: 15%;
+}
+
+.success-text {
+  color: #8892b0;
 }
