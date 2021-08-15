@@ -342,8 +342,6 @@
         var submitBtnText = submitBtn.text();
         var feedbackEl = form.find('.contact-feedback');
         event.preventDefault();
-        // Waiting for the response from the server
-        submitBtn.html('Wait...').addClass('wait').prop('disabled', true);
         setTimeout(function() {
           // Posts the Form's data to the server using Ajax
           $.ajax({
