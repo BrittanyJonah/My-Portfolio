@@ -116,6 +116,24 @@ background: linear-gradient(to bottom, var(--navy), var(--dark-navy)); /* W3C, I
   background-color: var(--dark-navy) !important;
  }
 
+ /* Contact */
+ .form-control {
+   color: #e6f1ff !important;
+ }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8892b0 !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #8892b0 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #8892b0 !important;
+}
+
 /* Preloader */
 .preloader {
   background-color: var(--dark-navy);
