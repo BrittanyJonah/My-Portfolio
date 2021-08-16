@@ -1,12 +1,3 @@
-/*!
- * Item: Kitzu
- * Description: Personal Portfolio Template
- * Author/Developer: Exill
- * Author/Developer URL: https://themeforest.net/user/exill
- * Version: v2.0.0
- * License: Themeforest Standard Licenses: https://themeforest.net/licenses
- */
-
 /*----------- Table of Contents -----------*/
 
 /**
@@ -21,7 +12,8 @@
  */
 
 (function($) {
-  'use strict';
+  
+  "use strict";
   $(function() {
     /*----------- Globals -----------*/
 
@@ -35,7 +27,7 @@
       }
     }
 
-    /* Custom function to remove margin bottom from items in the last row depending on the screen size / how many columns the grid has. This function was made to fix spacing issues in columns instead of having to manually fix them on different screen sizes which is not very user-friendly */
+  /* Custom function to remove margin bottom from items in the last row depending on the screen size / how many columns the grid has. This function was made to fix spacing issues in columns instead of having to manually fix them on different screen sizes which is not very user-friendly */
     function responsiveColumns(array) {
       function main(selector, value, classList) {
         var lastRow = $(selector[0]).find(selector[1]).slice(-value);
@@ -310,20 +302,20 @@
 
     /*----------  Portfolio: Portfolio  ----------*/
 
-    ifExists('#portfolio .portfolio-section', function() {
+    ifExists('#work .portfolio-section', function() {
       /* Setup Isotope */
-      var grid = $('#portfolio .portfolio-section .portfolio-grid');
+      var grid = $('#work .portfolio-section .portfolio-grid');
       var filters = $('#portfolio .portfolio-section .filter-control li');
       grid.imagesLoaded(function() {
         grid.isotope({
-          itemSelector: '#portfolio .portfolio-section .single-item',
+          itemSelector: '#work .portfolio-section .single-item',
           masonry: {
             horizontalOrder: true
           }
         });
         filters.on('click', function() {
-          filters.removeClass('tab-active');
-          $(this).addClass('tab-active');
+          filters.removeClass('filter-active');
+          $(this).addClass('filter-active');
           var selector = $(this).data('filter');
           grid.isotope({
             filter: selector,
@@ -346,3 +338,5 @@
 
   });
 }(jQuery));
+
+ 

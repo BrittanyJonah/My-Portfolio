@@ -9,6 +9,7 @@
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
 :root{
   --dark-navy: #020c1b;
@@ -39,6 +40,11 @@ h1{
 h6{
   color: var(--green);
   font-family: var(--font-mono);
+}
+
+.whispering-willow {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 3em;
 }
 
 /* Layout */
@@ -204,7 +210,20 @@ a:hover {
   transition: 0.4s;
 }
 
+.fas {
+  transition: 0.4s;
+}
+
 .fab:hover {
+  color: var(--green);
+  -moz-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
+  transform: translate(0px, -5px)
+}
+
+.fas:hover {
   color: var(--green);
   -moz-transform: translate(0px, -5px);
   -ms-transform: translate(0px, -5px);
@@ -247,4 +266,13 @@ a:hover {
 
 .success-text {
   color: #8892b0;
+}
+
+.filter-active {
+  color: #64ffda;
+}
+
+.list-inline-item:hover {
+  color: #64ffda;
+  cursor: pointer !important;
 }
