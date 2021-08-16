@@ -13,7 +13,7 @@
 
 (function($) {
   
-  "use strict";
+  'use strict';
   $(function() {
     /*----------- Globals -----------*/
 
@@ -302,20 +302,20 @@
 
     /*----------  Portfolio: Portfolio  ----------*/
 
-    ifExists('#work .portfolio-section', function() {
+    ifExists('#portfolio .portfolio-section', function() {
       /* Setup Isotope */
-      var grid = $('#work .portfolio-section .portfolio-grid');
+      var grid = $('#portfolio .portfolio-section .portfolio-grid');
       var filters = $('#portfolio .portfolio-section .filter-control li');
       grid.imagesLoaded(function() {
         grid.isotope({
-          itemSelector: '#work .portfolio-section .single-item',
+          itemSelector: '#portfolio .portfolio-section .single-item',
           masonry: {
             horizontalOrder: true
           }
         });
         filters.on('click', function() {
-          filters.removeClass('filter-active');
-          $(this).addClass('filter-active');
+          filters.removeClass('tab-active');
+          $(this).addClass('tab-active');
           var selector = $(this).data('filter');
           grid.isotope({
             filter: selector,
@@ -325,9 +325,7 @@
       });
     });
 
-    /*----------- Contact: Contact -----------*/
-
-    
+  /*----------- Contact: Contact -----------*/
 
   });
   $(window).on('load', function() {

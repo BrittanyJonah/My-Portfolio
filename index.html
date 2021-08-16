@@ -53,7 +53,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#about"><span class="green-text">01.</span>&nbsp;About</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience"><span class="green-text">02.</span>&nbsp;Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work"><span class="green-text">03.</span>&nbsp;Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio"><span class="green-text">03.</span>&nbsp;Work</a></li>
         <li class="nav-item"><a class="nav-link" href="#blog"><span class="green-text">04.</span>&nbsp;Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact"><span class="green-text">05.</span>&nbsp;Contact</a></li>
         <a class="btn btn-outline-light btn-resume green-text" href="/assets/brittp-resume.pdf" download="BrittanyP-Resume">Resume</a>
@@ -522,8 +522,8 @@
       </div>
     </div>
   </div>
-  <!-- Work lightbox-->
-  <div class="lightbox-wrapper" id="work" data-simplebar>
+  <!-- Portfolio lightbox-->
+  <div class="lightbox-wrapper" id="portfolio" data-simplebar>
     <div class="container">
       <div class="lightbox-close">
         <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
@@ -535,55 +535,52 @@
               <div class="col-12">
                 <div class="section-heading page-heading">
                   <p class="section-description">Showcasing some of my best work</p>
-                  <h2 class="section-title"><span class="green-text">03.</span>Portfolio</h2>
+                  <h2 class="section-title">Portfolio</h2>
                   <div class="animated-bar"></div>
                 </div>
               </div>
             </div>
-
             <!-- Portfolio section-->
             <div class="portfolio-section single-section">
-              
-              <!-- Filter nav-->
               <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul class="filter-control" aria-label="Filter Control">
-                    <li data-filter="*" class="list-inline-item filter-active">All</li>
-                    <li data-filter=".filter-website" class="list-inline-item">Website</li>
-                    <li data-filter=".filter-challenge" class="list-inline-item">Code Challenges</li>
-                    <li data-filter=".filter-other" class="list-inline-item">Other</li>
+                <!-- Filter nav-->
+                <div class="col-12">
+                  <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
+                    <li class="list-inline-item tab-active" data-filter="*">All</li>
+                    <li class="list-inline-item" data-filter=".brand">Brand</li>
+                    <li class="list-inline-item" data-filter=".design">Design</li>
+                    <li class="list-inline-item" data-filter=".photos">Photos</li>
                   </ul>
                 </div>
               </div>
-
               <!-- Thumbnail list-->
-              <div class="row portfolio-grid">
+              <div class="portfolio-grid row">
                 <!-- Single item-->
                 <div class="single-item col-12 col-lg-4 filter-website"><a class="portfolio-item" href="https://whispering-willow.netlify.app/" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Whispering Willow" src="img/whispering-willow.png">
-                      <div class="item-content">
-                        <h2 class="whispering-willow">Whispering Willow</h2><br>
-                        <h6 class="green-text">A website for a wedding venue located in Eastern New-Brunswick.</h6><br>
-                        <img height="40px" src="img/html.png">
-                        <img height="40px" src="img/css.png">
-                        <img height="40px" src="img/js.png">
-                        <img height="40px" src="img/bootstrap.svg"><br>
-                        
-                        <a href="https://github.com/BrittP-NBCC/WhisperingWillow" target="_blank">
-                          <span style="font-size: 3em; color: #a8b2d1;">
-                            <i class="fab fa-github-alt" title="Github"></i>
-                          </span>
-                        </a>
-                        <a href="https://whispering-willow.netlify.app/" target="_blank">
-                          <span style="font-size: 2.8em; color: #a8b2d1;">
-                            <i class="fas fa-external-link-alt" title="Whispering Willow"></i>
-                          </span>
-                        </a>
-                      </div>
+                  <div class="portfolio-wrapper"><img class="img-fluid" alt="Whispering Willow" src="img/whispering-willow.png">
+                    <div class="item-content">
+                      <h2 class="whispering-willow">Whispering Willow</h2><br>
+                      <h6 class="green-text">A website for a wedding venue located in Eastern New-Brunswick.</h6><br>
+                      <img height="40px" src="img/html.png">
+                      <img height="40px" src="img/css.png">
+                      <img height="40px" src="img/js.png">
+                      <img height="40px" src="img/bootstrap.svg"><br>
+                      
+                      <a href="https://github.com/BrittP-NBCC/WhisperingWillow" target="_blank">
+                        <span style="font-size: 3em; color: #a8b2d1;">
+                          <i class="fab fa-github-alt" title="Github"></i>
+                        </span>
+                      </a>
+                      <a href="https://whispering-willow.netlify.app/" target="_blank">
+                        <span style="font-size: 2.8em; color: #a8b2d1;">
+                          <i class="fas fa-external-link-alt" title="Whispering Willow"></i>
+                        </span>
+                      </a>
                     </div>
-                  </a></div>
+                  </div>
+                </a></div>
                 <!-- Single item-->
-                <div class="single-item col-12 col-lg-4 filter-challenge"><a class="portfolio-item" href="img/item-2.jpg" data-lightbox>
+                <div class="single-item col-12 col-lg-4 photos"><a class="portfolio-item" href="img/item-2.jpg" data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-2.jpg">
                       <div class="item-content">
                         <h6 class="content-title">3D Bag Mockup</h6><span class="content-more">More Info</span>
@@ -591,7 +588,7 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-12 col-lg-4 filter-other"><a class="portfolio-item" href="img/item-3.jpg" data-lightbox>
+                <div class="single-item col-12 col-lg-4 design"><a class="portfolio-item" href="img/item-3.jpg" data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-3.jpg">
                       <div class="item-content">
                         <h6 class="content-title">Modern Bag Design</h6><span class="content-more">More Info</span>
@@ -599,7 +596,7 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-12 col-lg-4 filter-website"><a class="portfolio-item" href="img/item-4.jpg" data-lightbox>
+                <div class="single-item col-12 col-lg-4 brand"><a class="portfolio-item" href="img/item-4.jpg" data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-4.jpg">
                       <div class="item-content">
                         <h6 class="content-title">Coffee Cup Design</h6><span class="content-more">More Info</span>
@@ -607,7 +604,7 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-12 col-lg-4 filter-other"><a class="portfolio-item" href="img/item-5.jpg" data-lightbox>
+                <div class="single-item col-12 col-lg-4 brand"><a class="portfolio-item" href="img/item-5.jpg" data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-5.jpg">
                       <div class="item-content">
                         <h6 class="content-title">T-Shirt Design</h6><span class="content-more">More Info</span>
@@ -615,14 +612,14 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-12 col-lg-4 filter-other"><a class="portfolio-item" href="img/item-6.jpg" data-lightbox>
+                <div class="single-item col-12 col-lg-4 photos"><a class="portfolio-item" href="img/item-6.jpg" data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-6.jpg">
                       <div class="item-content">
                         <h6 class="content-title">Packaging Box Mockup</h6><span class="content-more">More Info</span>
                       </div>
                     </div>
                   </a></div>
-              </div><!--Thumbnail list div-->
+              </div>
             </div>
           </div>
         </div>
