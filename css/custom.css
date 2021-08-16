@@ -47,6 +47,10 @@ h6{
   font-size: 3em;
 }
 
+.tab {
+  padding-left: 2.45rem;
+}
+
 /* Layout */
 .navy-background {
   background-color: var(--dark-navy);
