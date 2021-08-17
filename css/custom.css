@@ -242,6 +242,11 @@ a:hover {
   font-size: 1.4em;
 }
 
+.icon {
+  font-size: 1.3em; 
+  color: #a8b2d1;
+}
+
 .form-control {
   background-color: var(--navy) !important;
 }
