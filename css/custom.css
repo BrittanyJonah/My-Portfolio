@@ -191,6 +191,14 @@ background: linear-gradient(to bottom, var(--navy), var(--dark-navy)); /* W3C, I
   border-color: var(--green);
 }
 
+input:focus {
+  box-shadow: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
 a:hover {
   color: var(--green) !important;
 }
