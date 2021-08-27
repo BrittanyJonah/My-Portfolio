@@ -162,17 +162,17 @@
                 <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                 <p class="open-sans-font custom-span-contact position-relative">
                     <i class="fa fa-envelope-open position-absolute"></i>
-                    <span class="d-block">email me</span>brittany.jonah7@gmail.com
+                    <a href="mailto:brittany.jonah7@gmail.com"><span class="d-block">email me</span>brittany.jonah7@gmail.com</a>
                 </p>
                 <p class="open-sans-font custom-span-contact position-relative">
                     <i class="fa fa-phone-square position-absolute"></i>
-                    <span class="d-block">call me</span>+1 506 588 6788
+                    <a class="link" href="tel:+15065886788"><span class="d-block">call me</span>+1 506 588 6788</a>
                 </p>
             </div>
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="php/process-form.php">
+                <form class="contactform" method="post" data-netlify="true" data-netlify-recaptcha="true" action="">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -194,6 +194,9 @@
                             <div class="col-12 form-message">
                                 <span class="output_message text-center font-weight-600 text-uppercase"></span>
                             </div>
+                            <div class="col-12">
+                                <div class="mb-3" data-netlify-recaptcha="true"></div>
+                              </div>
                         </div>
                     </div>
                 </form>

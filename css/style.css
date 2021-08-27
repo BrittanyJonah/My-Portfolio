@@ -129,6 +129,7 @@ hr.separator {
 /* Animate the line from the left */
 .link a {
   position: relative;
+  font-weight: 400;
   color: var(--green);
 }
 
@@ -160,6 +161,7 @@ li {
 }
 
 a {
+  font-weight: 600;
   color: var(--lightest-slate);
 }
 
