@@ -155,6 +155,19 @@ hr.separator {
   transform: scaleX(1);
 }
 
+li {
+  color: var(--light-slate) !important;
+}
+
+a {
+  color: var(--lightest-slate);
+}
+
+a:hover {
+  color: var(--green) !important;
+  text-decoration: none;
+}
+
 /*** Buttons ***/
 .button {
   overflow: hidden;
@@ -444,6 +457,13 @@ hr.separator {
 /*================================================== */
 
 /*** Homepage ***/
+.description{
+  color: var(--slate);
+}
+
+.value {
+  color: var(--lightest-slate);
+}
 
 .home .container-home {
   display: flex;
