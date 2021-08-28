@@ -1679,3 +1679,11 @@ a:hover {
     margin-top: 35px !important;
   }
 }
+
+.success {
+  background-color: var(--navy);
+}
+
+.success-text {
+  color: #8892b0;
+}
