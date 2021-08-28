@@ -25,7 +25,7 @@ body.light.contact ul.social li a:hover,
 .blog .page-item.active .page-link,
 body.light.blog .page-link:hover,
 body.light.blog .page-item.active .page-link,
-.portfolio .grid li figure div,
+
 .header ul.icon-menu li.icon-box.active, .header-left ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover, .header-left ul.icon-menu li.icon-box:hover,
 body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-menu li.icon-box:hover,
 .btn,
@@ -35,6 +35,9 @@ body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-
 .title-section hr,
 .portfolio .slideshow .carousel-indicators li.active{
     background-color: #64ffda;
+}
+.portfolio .grid li figure div{
+    background-color: #020c1b;
 }
 .button:before{
     background-color: #64ffdb1f;
