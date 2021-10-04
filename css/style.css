@@ -297,23 +297,6 @@ a:hover {
 @media (min-width: 992px) {
 
   /*** Navigation ***/
-  /* Logo */
-  .b-circle {
-    position: fixed;
-    left: 35px !important;
-    top: 35px !important;
-    border: solid;
-    border-color: var(--green);
-    color: var(--green) !important;
-    padding: 6px 16px;
-    border-radius: 50%;
-    font-size: 18px;
-  }
-
-  .b-circle:hover {
-    background-color:rgba(39.2,100,85.5,0.3);
-  }
-
   .header {
     position: fixed;
     right: 35px;
@@ -471,6 +454,15 @@ a:hover {
 /* [ Pages ] */
 /*================================================== */
 
+ /* Logo */
+ .b-logo {
+  position: fixed;
+  left: 20px !important;
+  top: 25px !important;
+  padding: 6px 16px;
+  width: 80px;
+}
+
 /*** Homepage ***/
 .description{
   color: var(--slate);
@@ -487,7 +479,7 @@ a:hover {
 }
 
 .home .home-details > div {
-  max-width: 850px;
+  max-width: 950px !important;
   margin: 0 auto;
 }
 
@@ -1225,23 +1217,6 @@ a:hover {
 /* Mobile  Navigation */
 
 @media (max-width: 991px) {
-   /* Logo */
-   .b-circle {
-    position: fixed;
-    left: 35px !important;
-    top: 35px !important;
-    border: solid;
-    border-color: var(--green);
-    color: var(--green) !important;
-    padding: 6px 16px;
-    border-radius: 50%;
-    font-size: 18px;
-  }
-
-  .b-circle:hover {
-    background-color:rgba(39.2,100,85.5,0.3);
-  }
-
 
   body.home {
     padding: 25px;
@@ -1508,6 +1483,13 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+  .hello-text{
+    display: none;
+  }
+
+  .b-logo{
+    display: none;
+  }
 
   body {
     font-size: 14px;
